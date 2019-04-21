@@ -29,6 +29,12 @@ namespace Library_Management_System
             InitializeComponent();
             this.userId = userId;
             labelUserID.Text = userId;
+            SetName();
+        }
+
+        private void SetName()
+        {
+            throw new NotImplementedException();
         }
 
         #region menu panel
@@ -182,6 +188,7 @@ namespace Library_Management_System
             passwordAutoGen.Enabled = false;
         }
 
+        #region field validation
         private void fullnameTF_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 65 && e.KeyChar <= 90) || (e.KeyChar >= 97 && e.KeyChar <= 122) || (e.KeyChar == 8) || (e.KeyChar == 32))
@@ -195,7 +202,9 @@ namespace Library_Management_System
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
+        #endregion field validation 
 
+        #region additional menu panel
         private void mLibViewBtn_Click(object sender, EventArgs e)
         {
             ViewStudent viewStudent = new ViewStudent(userId);
@@ -209,6 +218,63 @@ namespace Library_Management_System
 
             viewStudent.Show();
         }
-        
+
+        private void metroButton4_Click(object sender, EventArgs e)
+        {
+            LibrarianPanel librarianPanel = new LibrarianPanel(userId);
+            this.Hide();
+            librarianPanel.Show();
+        }
+
+        private void mIssueBookBtn_Click(object sender, EventArgs e)
+        {
+            IssueBook issueBook = new IssueBook(userId);
+            this.Hide();
+            issueBook.Show();
+        }
+
+        private void mReturnBookBtn_Click(object sender, EventArgs e)
+        {
+            ReturnBook returnBook = new ReturnBook(userId);
+            this.Hide();
+            returnBook.Show();
+        }
+
+        private void mPayFineBtn_Click(object sender, EventArgs e)
+        {
+            PayFine payFee = new PayFine(userId);
+            this.Hide();
+            payFee.Show();
+        }
+
+        private void mChangePasswordBtn_Click(object sender, EventArgs e)
+        {
+            ChangePassword changePassword = new ChangePassword(userId);
+            this.Hide();
+            changePassword.mDashboardBtn.Visible = false;
+            changePassword.mViewBookBtn.Visible = false;
+            changePassword.mCurrentBorrowBtn.Visible = false;
+            changePassword.mMyInformationBtn.Visible = false;
+            changePassword.mChangePasswordBtn.Visible = false;
+            changePassword.mLogoutBtn.Visible = false;
+            changePassword.panel1.Visible = false;
+
+            changePassword.mCancelBtn.Visible = false;
+            changePassword.mLibCancelBtn.Visible = true;
+
+
+            changePassword.mBackToDashboardBtn.Visible = true;
+
+            changePassword.Show();
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.Show();
+        }
+        #endregion additional menu panel
+
     }
 }
