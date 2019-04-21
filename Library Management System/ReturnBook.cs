@@ -200,5 +200,71 @@ namespace Library_Management_System
         {
             clean();
         }
+
+        #region menu panel
+        private void mDashboardBtn_Click(object sender, EventArgs e)
+        {
+            LibrarianPanel librarianPanel = new LibrarianPanel(userId);
+            this.Hide();
+            librarianPanel.Show();
+        }
+
+
+        private void mIssueBookBtn_Click(object sender, EventArgs e)
+        {
+            IssueBook issueBook = new IssueBook(userId);
+            this.Hide();
+            issueBook.Show();
+        }
+
+        private void mPayFineBtn_Click(object sender, EventArgs e)
+        {
+            PayFine payFee = new PayFine(userId);
+            this.Hide();
+            payFee.Show();
+        }
+
+        private void mManageStudetnBtn_Click(object sender, EventArgs e)
+        {
+            ManageStudent manageStudent = new ManageStudent(userId);
+            this.Hide();
+            manageStudent.panel1.Visible = false;
+            manageStudent.panel2.Visible = true;
+            manageStudent.mViewStudentBtn.Visible = false;
+            manageStudent.mAddStdBtn.Visible = false;
+            manageStudent.mLibAddBtn.Visible = true;
+            manageStudent.mLibViewBtn.Visible = true;
+            manageStudent.Show();
+        }
+
+        private void mChangePasswordBtn_Click(object sender, EventArgs e)
+        {
+            ChangePassword changePassword = new ChangePassword(userId);
+            this.Hide();
+            changePassword.mDashboardBtn.Visible = false;
+            changePassword.mViewBookBtn.Visible = false;
+            changePassword.mCurrentBorrowBtn.Visible = false;
+            changePassword.mMyInformationBtn.Visible = false;
+            changePassword.mChangePasswordBtn.Visible = false;
+            changePassword.mLogoutBtn.Visible = false;
+            changePassword.panel1.Visible = false;
+
+            changePassword.mCancelBtn.Visible = false;
+            changePassword.mLibCancelBtn.Visible = true;
+
+
+            changePassword.mBackToDashboardBtn.Visible = true;
+
+            changePassword.Show();
+        }
+
+        private void mLogoutBtn_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.Show();
+        }
+
+        #endregion menu panel
     }
 }

@@ -15,29 +15,28 @@ using System.IO;
 
 namespace Library_Management_System
 {
-    public partial class LibrarianPanel : MetroFramework.Forms.MetroForm
+    public partial class PayFine : MetroFramework.Forms.MetroForm
     {
         private string userId;
-        public Information Information = new Information();
-        public Operations operations = new Operations();
-        public Dbconnection dbconnection = new Dbconnection();
 
-        public LibrarianPanel(string userId)
+        public Information info = new Information();
+        public Operations opr = new Operations();
+        public Dbconnection con = new Dbconnection();
+
+        public PayFine(string userId)
         {
             InitializeComponent();
             this.userId = userId;
-            ShowBookCount();
-            ShowStudentCount();
-            ShowIssueCount();
-
             SetName();
+            mPayFeeBtn.Enabled = false;
         }
 
         private void SetName()
         {
-            dbconnection.getcon();
+
+            con.getcon();
             string query1 = "select * from librarian where librarianId = '" + userId + "'";
-            SqlCommand cmdd = new SqlCommand(query1, dbconnection.getcon());
+            SqlCommand cmdd = new SqlCommand(query1, con.getcon());
             SqlDataReader sd = cmdd.ExecuteReader();
             if (sd.Read())
             {
@@ -49,63 +48,77 @@ namespace Library_Management_System
                 pictureBoxAdmin.Image = Image.FromStream(ms);
 
             }
-            dbconnection.getcon().Close();
-        }
-
-        private void ShowBookCount()
-        {
-
-
-            dbconnection.getcon();
-
-            SqlCommand cmd = new SqlCommand("SELECT sum (quantity) FROM books", dbconnection.getcon());
-
-            Int32 count = Convert.ToInt32(cmd.ExecuteScalar());
-            if (count > 0)
-            {
-                labelBooksCount.Text = Convert.ToString(count.ToString());
-            }
-            else
-            {
-                labelBooksCount.Text = "0";
-            }
-            dbconnection.getcon().Close();
-        }
-        private void ShowStudentCount()
-        {
-            dbconnection.getcon();
-            SqlCommand cmd = new SqlCommand("SELECT COUNT (*) FROM Student", dbconnection.getcon());
-            Int32 count = Convert.ToInt32(cmd.ExecuteScalar());
-            if (count > 0)
-            {
-                labelStudentCount.Text = Convert.ToString(count.ToString());
-            }
-            else
-            {
-                labelStudentCount.Text = "0";
-
-            }
-            dbconnection.getcon().Close();
+            con.getcon().Close();
 
         }
 
-        private void ShowIssueCount()
+        private void metroButton1_Click(object sender, EventArgs e)
         {
-            dbconnection.getcon();
-            SqlCommand cmd = new SqlCommand("SELECT COUNT (*) FROM borrowInfo", dbconnection.getcon());
-            Int32 count = Convert.ToInt32(cmd.ExecuteScalar());
-            if (count > 0)
+            con.getcon();
+            string query = "select * from student where studentId = '" +mSTID.Text+mStudentTextField.Text + "'";
+           
+            string query1 = "select * from feesTable where studentId = '" + mSTID.Text + mStudentTextField.Text + "'";
+            SqlCommand cmd = new SqlCommand(query, con.getcon());
+            SqlCommand cmdd = new SqlCommand(query1, con.getcon());
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            SqlDataAdapter sdaa = new SqlDataAdapter(cmdd);
+            DataTable dt = new DataTable();
+            DataTable dt1 = new DataTable();
+            sda.Fill(dt);
+            sdaa.Fill(dt1);
+            int i = Convert.ToInt32(dt.Rows.Count.ToString());
+            if (i == 0)
             {
-                labelBookIssued.Text = Convert.ToString(count.ToString());
+                MessageBox.Show("No Record Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                labelBookIssued.Text = "0";
-
+                foreach (DataRow dr in dt.Rows)
+                {
+                    fullnameTF.Text = dr["studentName"].ToString();
+                    mStudentTextField.Enabled = false;
+                }
+                con.getcon().Close();
             }
-            dbconnection.getcon().Close();
 
+            int j = Convert.ToInt32(dt1.Rows.Count.ToString());
+            if (j > 0)
+            {
+                foreach (DataRow dr1 in dt1.Rows)
+                {
+                    feesTF.Text = dr1["fees"].ToString();
+                }
+            }
+            mPayFeeBtn.Enabled = true;
+        }
 
+        private void mPayFeeBtn_Click(object sender, EventArgs e)
+        {
+            if (mStudentTextField.Text == "")
+            {
+                MessageBox.Show("Enter Student ID");
+            }
+            else
+            {
+                info.userId = mSTID.Text + mStudentTextField.Text;
+                opr.deleteFromFees(info);
+                mStudentTextField.Enabled = true;
+                clear();
+            }
+
+        }
+
+        private void clear()
+        {
+            fullnameTF.Text = "";
+            feesTF.Text = "";
+            mStudentTextField.Text = "";
+        }
+
+        private void mClearBtn_Click(object sender, EventArgs e)
+        {
+            clear();
+            mStudentTextField.Enabled = true;
         }
 
         #region menu panel
@@ -115,7 +128,7 @@ namespace Library_Management_System
             this.Hide();
             librarianPanel.Show();
         }
-        
+
 
         private void mIssueBookBtn_Click(object sender, EventArgs e)
         {
@@ -129,13 +142,6 @@ namespace Library_Management_System
             ReturnBook returnBook = new ReturnBook(userId);
             this.Hide();
             returnBook.Show();
-        }
-
-        private void mPayFineBtn_Click(object sender, EventArgs e)
-        {
-            PayFine payFee = new PayFine(userId);
-            this.Hide();
-            payFee.Show();
         }
         
         private void mManageStudetnBtn_Click(object sender, EventArgs e)
@@ -178,8 +184,7 @@ namespace Library_Management_System
             this.Hide();
             login.Show();
         }
-      
-        #endregion menu panel
 
+        #endregion menu panel
     }
 }

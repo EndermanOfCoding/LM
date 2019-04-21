@@ -43,19 +43,6 @@
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.mLibarianBtn = new MetroFramework.Controls.MetroButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.mManageStudetnBtn = new MetroFramework.Controls.MetroButton();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.mChangePasswordBtn = new MetroFramework.Controls.MetroButton();
-            this.pictureBoxAdmin = new System.Windows.Forms.PictureBox();
-            this.mMyInformationBtn = new MetroFramework.Controls.MetroButton();
-            this.mUserID = new System.Windows.Forms.Label();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.mActiveInactiveUserBtn = new MetroFramework.Controls.MetroButton();
-            this.mReturnBookBtn = new MetroFramework.Controls.MetroButton();
-            this.mIssueBookBtn = new MetroFramework.Controls.MetroButton();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.mLogoutBtn = new MetroFramework.Controls.MetroButton();
             this.mDashboardBtn = new MetroFramework.Controls.MetroButton();
             this.mTextSearch = new MetroFramework.Controls.MetroTextBox();
@@ -72,10 +59,11 @@
             this.mViewStudentBtn = new MetroFramework.Controls.MetroButton();
             this.uploadStudentPic = new System.Windows.Forms.PictureBox();
             this.genderTF = new MetroFramework.Controls.MetroTextBox();
+            this.mLibViewStdBtn = new MetroFramework.Controls.MetroButton();
+            this.mLibAddStdBtn = new MetroFramework.Controls.MetroButton();
+            this.mBackToDashBoard = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgbStudent)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uploadStudentPic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -229,153 +217,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 562);
             this.panel1.TabIndex = 27;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel2.Controls.Add(this.metroButton1);
-            this.panel2.Controls.Add(this.mManageStudetnBtn);
-            this.panel2.Controls.Add(this.mChangePasswordBtn);
-            this.panel2.Controls.Add(this.pictureBoxAdmin);
-            this.panel2.Controls.Add(this.mMyInformationBtn);
-            this.panel2.Controls.Add(this.mUserID);
-            this.panel2.Controls.Add(this.metroButton2);
-            this.panel2.Controls.Add(this.metroLabel1);
-            this.panel2.Controls.Add(this.mActiveInactiveUserBtn);
-            this.panel2.Controls.Add(this.mReturnBookBtn);
-            this.panel2.Controls.Add(this.mIssueBookBtn);
-            this.panel2.Controls.Add(this.metroButton3);
-            this.panel2.Location = new System.Drawing.Point(212, 15);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(205, 541);
-            this.panel2.TabIndex = 56;
-            this.panel2.Visible = false;
-            // 
-            // mManageStudetnBtn
-            // 
-            this.mManageStudetnBtn.Location = new System.Drawing.Point(0, 243);
-            this.mManageStudetnBtn.Name = "mManageStudetnBtn";
-            this.mManageStudetnBtn.Size = new System.Drawing.Size(200, 37);
-            this.mManageStudetnBtn.TabIndex = 56;
-            this.mManageStudetnBtn.Text = "Manage Student";
-            this.mManageStudetnBtn.UseSelectable = true;
-            this.mManageStudetnBtn.Visible = false;
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.metroButton1.Location = new System.Drawing.Point(0, 501);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(200, 37);
-            this.metroButton1.TabIndex = 10;
-            this.metroButton1.Text = "Logout";
-            this.metroButton1.UseSelectable = true;
-            // 
-            // mChangePasswordBtn
-            // 
-            this.mChangePasswordBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.mChangePasswordBtn.Location = new System.Drawing.Point(0, 415);
-            this.mChangePasswordBtn.Name = "mChangePasswordBtn";
-            this.mChangePasswordBtn.Size = new System.Drawing.Size(200, 37);
-            this.mChangePasswordBtn.TabIndex = 9;
-            this.mChangePasswordBtn.Text = "Change Password";
-            this.mChangePasswordBtn.UseSelectable = true;
-            this.mChangePasswordBtn.Visible = false;
-            // 
-            // pictureBoxAdmin
-            // 
-            this.pictureBoxAdmin.Location = new System.Drawing.Point(0, 30);
-            this.pictureBoxAdmin.Name = "pictureBoxAdmin";
-            this.pictureBoxAdmin.Size = new System.Drawing.Size(200, 97);
-            this.pictureBoxAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxAdmin.TabIndex = 8;
-            this.pictureBoxAdmin.TabStop = false;
-            this.pictureBoxAdmin.Visible = false;
-            // 
-            // mMyInformationBtn
-            // 
-            this.mMyInformationBtn.Location = new System.Drawing.Point(0, 372);
-            this.mMyInformationBtn.Name = "mMyInformationBtn";
-            this.mMyInformationBtn.Size = new System.Drawing.Size(200, 37);
-            this.mMyInformationBtn.TabIndex = 7;
-            this.mMyInformationBtn.Text = "My Information";
-            this.mMyInformationBtn.UseSelectable = true;
-            this.mMyInformationBtn.Visible = false;
-            // 
-            // mUserID
-            // 
-            this.mUserID.AutoSize = true;
-            this.mUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mUserID.Location = new System.Drawing.Point(3, 130);
-            this.mUserID.Name = "mUserID";
-            this.mUserID.Size = new System.Drawing.Size(43, 20);
-            this.mUserID.TabIndex = 6;
-            this.mUserID.Text = "User";
-            this.mUserID.Visible = false;
-            // 
-            // metroButton2
-            // 
-            this.metroButton2.Location = new System.Drawing.Point(0, 200);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(200, 37);
-            this.metroButton2.TabIndex = 4;
-            this.metroButton2.Text = "Manage Book";
-            this.metroButton2.UseSelectable = true;
-            this.metroButton2.Visible = false;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.Location = new System.Drawing.Point(58, 8);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(77, 19);
-            this.metroLabel1.TabIndex = 5;
-            this.metroLabel1.Text = "WELCOME";
-            this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroLabel1.UseCustomBackColor = true;
-            this.metroLabel1.Visible = false;
-            // 
-            // mActiveInactiveUserBtn
-            // 
-            this.mActiveInactiveUserBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.mActiveInactiveUserBtn.Location = new System.Drawing.Point(0, 458);
-            this.mActiveInactiveUserBtn.Name = "mActiveInactiveUserBtn";
-            this.mActiveInactiveUserBtn.Size = new System.Drawing.Size(200, 37);
-            this.mActiveInactiveUserBtn.TabIndex = 3;
-            this.mActiveInactiveUserBtn.Text = "Active/Inactive Student";
-            this.mActiveInactiveUserBtn.UseSelectable = true;
-            this.mActiveInactiveUserBtn.Visible = false;
-            // 
-            // mReturnBookBtn
-            // 
-            this.mReturnBookBtn.Location = new System.Drawing.Point(0, 329);
-            this.mReturnBookBtn.Name = "mReturnBookBtn";
-            this.mReturnBookBtn.Size = new System.Drawing.Size(200, 37);
-            this.mReturnBookBtn.TabIndex = 2;
-            this.mReturnBookBtn.Text = "Return Book";
-            this.mReturnBookBtn.UseSelectable = true;
-            this.mReturnBookBtn.Visible = false;
-            // 
-            // mIssueBookBtn
-            // 
-            this.mIssueBookBtn.Location = new System.Drawing.Point(0, 286);
-            this.mIssueBookBtn.Name = "mIssueBookBtn";
-            this.mIssueBookBtn.Size = new System.Drawing.Size(200, 37);
-            this.mIssueBookBtn.TabIndex = 1;
-            this.mIssueBookBtn.Text = "Issue Book";
-            this.mIssueBookBtn.UseSelectable = true;
-            this.mIssueBookBtn.Visible = false;
-            // 
-            // metroButton3
-            // 
-            this.metroButton3.Location = new System.Drawing.Point(0, 157);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(200, 37);
-            this.metroButton3.TabIndex = 0;
-            this.metroButton3.Text = "Dashboard";
-            this.metroButton3.UseSelectable = true;
-            this.metroButton3.Visible = false;
             // 
             // mLogoutBtn
             // 
@@ -602,9 +443,9 @@
             // 
             // mAddStudentBtn
             // 
-            this.mAddStudentBtn.Location = new System.Drawing.Point(372, 53);
+            this.mAddStudentBtn.Location = new System.Drawing.Point(388, 53);
             this.mAddStudentBtn.Name = "mAddStudentBtn";
-            this.mAddStudentBtn.Size = new System.Drawing.Size(100, 45);
+            this.mAddStudentBtn.Size = new System.Drawing.Size(95, 45);
             this.mAddStudentBtn.TabIndex = 48;
             this.mAddStudentBtn.Text = "Add Student";
             this.mAddStudentBtn.UseSelectable = true;
@@ -614,7 +455,7 @@
             // 
             this.mViewStudentBtn.Location = new System.Drawing.Point(504, 53);
             this.mViewStudentBtn.Name = "mViewStudentBtn";
-            this.mViewStudentBtn.Size = new System.Drawing.Size(100, 45);
+            this.mViewStudentBtn.Size = new System.Drawing.Size(90, 45);
             this.mViewStudentBtn.TabIndex = 49;
             this.mViewStudentBtn.Text = "View Student";
             this.mViewStudentBtn.UseSelectable = true;
@@ -660,11 +501,46 @@
             this.genderTF.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.genderTF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.genderTF_KeyPress);
             // 
+            // mLibViewStdBtn
+            // 
+            this.mLibViewStdBtn.Location = new System.Drawing.Point(700, 53);
+            this.mLibViewStdBtn.Name = "mLibViewStdBtn";
+            this.mLibViewStdBtn.Size = new System.Drawing.Size(91, 45);
+            this.mLibViewStdBtn.TabIndex = 53;
+            this.mLibViewStdBtn.Text = "View Student";
+            this.mLibViewStdBtn.UseSelectable = true;
+            this.mLibViewStdBtn.Visible = false;
+            // 
+            // mLibAddStdBtn
+            // 
+            this.mLibAddStdBtn.Location = new System.Drawing.Point(603, 53);
+            this.mLibAddStdBtn.Name = "mLibAddStdBtn";
+            this.mLibAddStdBtn.Size = new System.Drawing.Size(91, 45);
+            this.mLibAddStdBtn.TabIndex = 52;
+            this.mLibAddStdBtn.Text = "Add Student";
+            this.mLibAddStdBtn.UseSelectable = true;
+            this.mLibAddStdBtn.Visible = false;
+            this.mLibAddStdBtn.Click += new System.EventHandler(this.mLibAddStdBtn_Click);
+            // 
+            // mBackToDashBoard
+            // 
+            this.mBackToDashBoard.Location = new System.Drawing.Point(273, 53);
+            this.mBackToDashBoard.Name = "mBackToDashBoard";
+            this.mBackToDashBoard.Size = new System.Drawing.Size(95, 45);
+            this.mBackToDashBoard.TabIndex = 54;
+            this.mBackToDashBoard.Text = "Back To Dashboard";
+            this.mBackToDashBoard.UseSelectable = true;
+            this.mBackToDashBoard.Visible = false;
+            this.mBackToDashBoard.Click += new System.EventHandler(this.mBackToDashBoard_Click);
+            // 
             // ViewStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 607);
+            this.Controls.Add(this.mBackToDashBoard);
+            this.Controls.Add(this.mLibViewStdBtn);
+            this.Controls.Add(this.mLibAddStdBtn);
             this.Controls.Add(this.genderTF);
             this.Controls.Add(this.uploadStudentPic);
             this.Controls.Add(this.mViewStudentBtn);
@@ -689,15 +565,11 @@
             this.Controls.Add(this.fullnameTF);
             this.Controls.Add(this.studentIdTF2);
             this.Controls.Add(this.phoneTF);
-            this.Controls.Add(this.panel2);
             this.Name = "ViewStudent";
             this.Text = "View Student";
             ((System.ComponentModel.ISupportInitialize)(this.dgbStudent)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdmin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uploadStudentPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -733,22 +605,12 @@
         private MetroFramework.Controls.MetroTextBox fullnameTF;
         private MetroFramework.Controls.MetroTextBox studentIdTF2;
         private MetroFramework.Controls.MetroTextBox phoneTF;
-        private MetroFramework.Controls.MetroButton mAddStudentBtn;
-        private MetroFramework.Controls.MetroButton mViewStudentBtn;
+        public MetroFramework.Controls.MetroButton mAddStudentBtn;
+        public MetroFramework.Controls.MetroButton mViewStudentBtn;
         private System.Windows.Forms.PictureBox uploadStudentPic;
         private MetroFramework.Controls.MetroTextBox genderTF;
-        public System.Windows.Forms.Panel panel2;
-        private MetroFramework.Controls.MetroButton mManageStudetnBtn;
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroButton mChangePasswordBtn;
-        private System.Windows.Forms.PictureBox pictureBoxAdmin;
-        private MetroFramework.Controls.MetroButton mMyInformationBtn;
-        private System.Windows.Forms.Label mUserID;
-        private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroButton mActiveInactiveUserBtn;
-        private MetroFramework.Controls.MetroButton mReturnBookBtn;
-        private MetroFramework.Controls.MetroButton mIssueBookBtn;
-        public MetroFramework.Controls.MetroButton metroButton3;
+        public MetroFramework.Controls.MetroButton mLibViewStdBtn;
+        public MetroFramework.Controls.MetroButton mLibAddStdBtn;
+        public MetroFramework.Controls.MetroButton mBackToDashBoard;
     }
 }

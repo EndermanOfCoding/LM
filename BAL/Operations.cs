@@ -269,7 +269,7 @@ namespace BAL
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into feesTable (studentId,returnDate,fees) values ('" + info.studentId + "','" + info.orginalReturnDate + "','"+info.fees+"')";
+            cmd.CommandText = "insert into feesTable (studentId,returnDate,fees) values ('" + info.studentId.ToUpper() + "','" + info.orginalReturnDate + "','"+info.fees+"')";
             return db.ExeNonQuery(cmd);
         }
         //Cancel Member ship
@@ -295,6 +295,7 @@ namespace BAL
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.Text;
+            Console.WriteLine(info.userId);
             cmd.CommandText = "Delete from feesTable where studentId = '" + info.userId + "'";
             return db.ExeNonQuery(cmd);
         }

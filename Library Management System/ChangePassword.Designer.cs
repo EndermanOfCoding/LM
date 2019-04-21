@@ -37,7 +37,6 @@
             this.mLogoutBtn = new MetroFramework.Controls.MetroButton();
             this.mMyInformationBtn = new MetroFramework.Controls.MetroButton();
             this.mCurrentBorrowBtn = new MetroFramework.Controls.MetroButton();
-            this.mDashboardBtn = new MetroFramework.Controls.MetroButton();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
@@ -48,6 +47,7 @@
             this.mCancelBtn = new MetroFramework.Controls.MetroButton();
             this.mLibCancelBtn = new MetroFramework.Controls.MetroButton();
             this.mBackToDashboardBtn = new MetroFramework.Controls.MetroButton();
+            this.mDashboardBtn = new MetroFramework.Controls.MetroButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdmin)).BeginInit();
             this.SuspendLayout();
@@ -56,14 +56,14 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.pictureBoxAdmin);
-            this.panel1.Controls.Add(this.mChangePasswordBtn);
             this.panel1.Controls.Add(this.mUserID);
-            this.panel1.Controls.Add(this.mViewBookBtn);
             this.panel1.Controls.Add(this.metroLabel5);
             this.panel1.Controls.Add(this.mLogoutBtn);
             this.panel1.Controls.Add(this.mMyInformationBtn);
             this.panel1.Controls.Add(this.mCurrentBorrowBtn);
             this.panel1.Controls.Add(this.mDashboardBtn);
+            this.panel1.Controls.Add(this.mViewBookBtn);
+            this.panel1.Controls.Add(this.mChangePasswordBtn);
             this.panel1.Location = new System.Drawing.Point(0, 52);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(201, 578);
@@ -149,16 +149,6 @@
             this.mCurrentBorrowBtn.Text = "Current Borrow";
             this.mCurrentBorrowBtn.UseSelectable = true;
             this.mCurrentBorrowBtn.Click += new System.EventHandler(this.mCurrentBorrowBtn_Click);
-            // 
-            // mDashboardBtn
-            // 
-            this.mDashboardBtn.Location = new System.Drawing.Point(0, 163);
-            this.mDashboardBtn.Name = "mDashboardBtn";
-            this.mDashboardBtn.Size = new System.Drawing.Size(200, 52);
-            this.mDashboardBtn.TabIndex = 0;
-            this.mDashboardBtn.Text = "Dashboard";
-            this.mDashboardBtn.UseSelectable = true;
-            this.mDashboardBtn.Click += new System.EventHandler(this.mDashboardBtn_Click);
             // 
             // metroLabel1
             // 
@@ -319,11 +309,22 @@
             this.mBackToDashboardBtn.Visible = false;
             this.mBackToDashboardBtn.Click += new System.EventHandler(this.mBackToDashboardBtn_Click);
             // 
+            // mDashboardBtn
+            // 
+            this.mDashboardBtn.Location = new System.Drawing.Point(0, 163);
+            this.mDashboardBtn.Name = "mDashboardBtn";
+            this.mDashboardBtn.Size = new System.Drawing.Size(200, 52);
+            this.mDashboardBtn.TabIndex = 0;
+            this.mDashboardBtn.Text = "Dashboard";
+            this.mDashboardBtn.UseSelectable = true;
+            this.mDashboardBtn.Click += new System.EventHandler(this.mDashboardBtn_Click);
+            // 
             // ChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 631);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.mBackToDashboardBtn);
             this.Controls.Add(this.mLibCancelBtn);
             this.Controls.Add(this.mCancelBtn);
@@ -334,7 +335,6 @@
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
-            this.Controls.Add(this.panel1);
             this.Name = "ChangePassword";
             this.Text = "Change Password";
             this.panel1.ResumeLayout(false);
@@ -348,24 +348,24 @@
         #endregion
 
         public System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBoxAdmin;
-        private MetroFramework.Controls.MetroButton mChangePasswordBtn;
-        private System.Windows.Forms.Label mUserID;
-        private MetroFramework.Controls.MetroButton mViewBookBtn;
-        private MetroFramework.Controls.MetroLabel metroLabel5;
-        private MetroFramework.Controls.MetroButton mLogoutBtn;
-        private MetroFramework.Controls.MetroButton mMyInformationBtn;
-        private MetroFramework.Controls.MetroButton mCurrentBorrowBtn;
-        private MetroFramework.Controls.MetroButton mDashboardBtn;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
-        private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroTextBox oldTF;
-        private MetroFramework.Controls.MetroTextBox newTF;
-        private MetroFramework.Controls.MetroTextBox conTF;
+        public System.Windows.Forms.PictureBox pictureBoxAdmin;
+        public MetroFramework.Controls.MetroButton mChangePasswordBtn;
+        public System.Windows.Forms.Label mUserID;
+        public MetroFramework.Controls.MetroButton mViewBookBtn;
+        public MetroFramework.Controls.MetroLabel metroLabel5;
+        public MetroFramework.Controls.MetroButton mLogoutBtn;
+        public MetroFramework.Controls.MetroButton mMyInformationBtn;
+        public MetroFramework.Controls.MetroButton mCurrentBorrowBtn;
+        public MetroFramework.Controls.MetroLabel metroLabel1;
+        public MetroFramework.Controls.MetroLabel metroLabel2;
+        public MetroFramework.Controls.MetroLabel metroLabel3;
+        public MetroFramework.Controls.MetroTextBox oldTF;
+        public MetroFramework.Controls.MetroTextBox newTF;
+        public MetroFramework.Controls.MetroTextBox conTF;
         public MetroFramework.Controls.MetroButton mConfirmBtn;
         public MetroFramework.Controls.MetroButton mCancelBtn;
         public MetroFramework.Controls.MetroButton mLibCancelBtn;
         public MetroFramework.Controls.MetroButton mBackToDashboardBtn;
+        public MetroFramework.Controls.MetroButton mDashboardBtn;
     }
 }

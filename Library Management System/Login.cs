@@ -52,7 +52,7 @@ namespace Library_Management_System
                 {
                     LibrarianPanel lp = new LibrarianPanel(mUserID.Text);
                     this.Hide();
-                    lp.Show();
+                    lp.Show(); 
 
                     //con.getcon().Close();
                     //string query = "select * from librarian where librarianId = '" + txtUsername.Text + "'";

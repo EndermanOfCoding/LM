@@ -309,6 +309,24 @@ namespace Library_Management_System
             else { e.Handled = true; }
         }
 
-        
+        private void mBackToDashBoard_Click(object sender, EventArgs e)
+        {
+            LibrarianPanel librarianPanel = new LibrarianPanel(userId);
+            this.Hide();
+            librarianPanel.Show();
+        }
+
+        private void mLibAddStdBtn_Click(object sender, EventArgs e)
+        {
+            ManageStudent manageStudent = new ManageStudent(userId);
+            this.Hide();
+            manageStudent.panel1.Visible = false;
+            manageStudent.panel2.Visible = true;
+            manageStudent.mViewStudentBtn.Visible = false;
+            manageStudent.mAddStdBtn.Visible = false;
+            manageStudent.mLibAddBtn.Visible = true;
+            manageStudent.mLibViewBtn.Visible = true;
+            manageStudent.Show();
+        }
     }
 }

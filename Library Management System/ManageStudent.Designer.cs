@@ -716,6 +716,7 @@
             this.mLibAddBtn.Text = "Add Student";
             this.mLibAddBtn.UseSelectable = true;
             this.mLibAddBtn.Visible = false;
+            
             // 
             // ManageStudent
             // 

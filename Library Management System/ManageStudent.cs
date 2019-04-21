@@ -201,8 +201,14 @@ namespace Library_Management_System
             ViewStudent viewStudent = new ViewStudent(userId);
             this.Hide();
             viewStudent.panel1.Visible = false;
-            viewStudent.panel2.Visible = true;
+            viewStudent.mLibAddStdBtn.Visible = true;
+            viewStudent.mLibViewStdBtn.Visible = true;
+            viewStudent.mAddStudentBtn.Visible = false;
+            viewStudent.mLibViewStdBtn.Visible = false;
+            viewStudent.mBackToDashBoard.Visible = true;
+
             viewStudent.Show();
         }
+        
     }
 }
