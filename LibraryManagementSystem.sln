@@ -1,0 +1,96 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library Management System", "Library Management System\Library Management System.csproj", "{CE8AB7C0-076A-43D4-A492-5E05D7DD74B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL", "BAL\BAL.csproj", "{B08C33FB-3B6E-474F-B131-B1D839F3CFE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEL", "BEL\BEL.csproj", "{C1FD4AB6-A483-4EA4-9CAB-2D92441C1E6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{E004E900-F1D7-477A-B4AC-2506E38B7610}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{53FC9005-A75C-401D-BE32-559B56D091A4}"
+	ProjectSection(SolutionItems) = preProject
+		Assets\1.jpg = Assets\1.jpg
+		Assets\1371.jpg = Assets\1371.jpg
+		Assets\1418331391.png = Assets\1418331391.png
+		Assets\2.jpg = Assets\2.jpg
+		Assets\3.jpg = Assets\3.jpg
+		Assets\41prHleW6NL._SX397_BO1,204,203,200_.jpg = Assets\41prHleW6NL._SX397_BO1,204,203,200_.jpg
+		Assets\44131536_2173005156310492_3404733352790458368_n.jpg = Assets\44131536_2173005156310492_3404733352790458368_n.jpg
+		Assets\46128309_2127715017279139_3830236321150926848_n.jpg = Assets\46128309_2127715017279139_3830236321150926848_n.jpg
+		Assets\48370214_2239697059633441_1817702624355418112_n.jpg = Assets\48370214_2239697059633441_1817702624355418112_n.jpg
+		Assets\51gJ7mmNOQL._SX390_BO1,204,203,200_.jpg = Assets\51gJ7mmNOQL._SX390_BO1,204,203,200_.jpg
+		Assets\51mMgBIfU+L._SX372_BO1,204,203,200_.jpg = Assets\51mMgBIfU+L._SX372_BO1,204,203,200_.jpg
+		Assets\51NuHATrs8L._SX354_BO1,204,203,200_.jpg = Assets\51NuHATrs8L._SX354_BO1,204,203,200_.jpg
+		Assets\91gfT5QJrjL.jpg = Assets\91gfT5QJrjL.jpg
+		Assets\Add Book_48px.png = Assets\Add Book_48px.png
+		Assets\Add_50px.png = Assets\Add_50px.png
+		Assets\Add_64px.png = Assets\Add_64px.png
+		Assets\Back_50px.png = Assets\Back_50px.png
+		Assets\Book Stack_48px.png = Assets\Book Stack_48px.png
+		Assets\Books_48px.png = Assets\Books_48px.png
+		Assets\bookupload1.jpg = Assets\bookupload1.jpg
+		Assets\c41e-square-orig.jpg = Assets\c41e-square-orig.jpg
+		Assets\Close Window_48px.png = Assets\Close Window_48px.png
+		Assets\Custom-Icon-Design-Pretty-Office-2-Library.ico = Assets\Custom-Icon-Design-Pretty-Office-2-Library.ico
+		Assets\Delete_48px.png = Assets\Delete_48px.png
+		Assets\Delete_64px.png = Assets\Delete_64px.png
+		Assets\Download_48px.png = Assets\Download_48px.png
+		Assets\Error_48px.png = Assets\Error_48px.png
+		Assets\Front Desk_48px.png = Assets\Front Desk_48px.png
+		Assets\Graduation Cap_48px.png = Assets\Graduation Cap_48px.png
+		Assets\Info_48px.png = Assets\Info_48px.png
+		Assets\Key_48px.png = Assets\Key_48px.png
+		Assets\Logout Rounded Left_48px.png = Assets\Logout Rounded Left_48px.png
+		Assets\Male User_96px.png = Assets\Male User_96px.png
+		Assets\Map Pin_48px.png = Assets\Map Pin_48px.png
+		Assets\Menu_50px.png = Assets\Menu_50px.png
+		Assets\Multiply_50px.png = Assets\Multiply_50px.png
+		Assets\Password Reset_48px.png = Assets\Password Reset_48px.png
+		Assets\Password_48px.png = Assets\Password_48px.png
+		Assets\Payroll_48px.png = Assets\Payroll_48px.png
+		Assets\Plus Math_48px.png = Assets\Plus Math_48px.png
+		Assets\ProfileImage.jpg = Assets\ProfileImage.jpg
+		Assets\Remove Book_48px.png = Assets\Remove Book_48px.png
+		Assets\Return Book_48px.png = Assets\Return Book_48px.png
+		Assets\scis_bl0417_2_119.jpg = Assets\scis_bl0417_2_119.jpg
+		Assets\Search_52px.png = Assets\Search_52px.png
+		Assets\Student Male_48px.png = Assets\Student Male_48px.png
+		Assets\Undo_48px.png = Assets\Undo_48px.png
+		Assets\user.png = Assets\user.png
+		Assets\View_48px.png = Assets\View_48px.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE8AB7C0-076A-43D4-A492-5E05D7DD74B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8AB7C0-076A-43D4-A492-5E05D7DD74B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE8AB7C0-076A-43D4-A492-5E05D7DD74B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE8AB7C0-076A-43D4-A492-5E05D7DD74B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B08C33FB-3B6E-474F-B131-B1D839F3CFE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B08C33FB-3B6E-474F-B131-B1D839F3CFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B08C33FB-3B6E-474F-B131-B1D839F3CFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B08C33FB-3B6E-474F-B131-B1D839F3CFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1FD4AB6-A483-4EA4-9CAB-2D92441C1E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1FD4AB6-A483-4EA4-9CAB-2D92441C1E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1FD4AB6-A483-4EA4-9CAB-2D92441C1E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1FD4AB6-A483-4EA4-9CAB-2D92441C1E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E004E900-F1D7-477A-B4AC-2506E38B7610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E004E900-F1D7-477A-B4AC-2506E38B7610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E004E900-F1D7-477A-B4AC-2506E38B7610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E004E900-F1D7-477A-B4AC-2506E38B7610}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D20CD20F-8AB0-42AA-9398-34BCF7E5DB65}
+	EndGlobalSection
+EndGlobal
