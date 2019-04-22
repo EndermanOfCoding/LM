@@ -305,6 +305,7 @@ namespace Library_Management_System
 
         #endregion menu panel
 
+        #region additional menu panel
         private void mSPDashboardBtn_Click(object sender, EventArgs e)
         {
             StudentPanel studentPanel = new StudentPanel(userId);
@@ -347,5 +348,6 @@ namespace Library_Management_System
             viewBook.panel1.Visible = true;
             viewBook.Show();
         }
+        #endregion additional menu panel
     }
 }

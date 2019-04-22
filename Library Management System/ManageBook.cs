@@ -163,16 +163,6 @@ namespace Library_Management_System
             viewBook.panel1.Visible = true;
             viewBook.Show();
         }
-
-        private void mLibrarianViewBookAddBtn_Click(object sender, EventArgs e)
-        {
-            ViewBook viewBook = new ViewBook(userId);
-            this.Hide();
-            viewBook.panel1.Visible = false;
-            viewBook.panel2.Visible = false;
-            viewBook.panel3.Visible = true;
-            viewBook.metroButton3.Visible = true;
-            viewBook.Show();
-        }
+        
     }
 }
