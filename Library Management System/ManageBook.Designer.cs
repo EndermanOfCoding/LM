@@ -29,19 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.mManageStudetnBtn = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.mChangePasswordBtn = new MetroFramework.Controls.MetroButton();
-            this.pictureBoxAdmin = new System.Windows.Forms.PictureBox();
-            this.mMyInformationBtn = new MetroFramework.Controls.MetroButton();
-            this.mUserID = new System.Windows.Forms.Label();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
-            this.mActiveInactiveUserBtn = new MetroFramework.Controls.MetroButton();
-            this.mReturnBookBtn = new MetroFramework.Controls.MetroButton();
-            this.mIssueBookBtn = new MetroFramework.Controls.MetroButton();
-            this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.labelUserID = new System.Windows.Forms.Label();
             this.mManageStudentBtn = new MetroFramework.Controls.MetroButton();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
@@ -68,10 +55,23 @@
             this.yearComboBox = new MetroFramework.Controls.MetroComboBox();
             this.mLibrarianViewBookAddBtn = new MetroFramework.Controls.MetroButton();
             this.mLibrarianBookAddBtn = new MetroFramework.Controls.MetroButton();
+            this.metroButton4 = new MetroFramework.Controls.MetroButton();
+            this.mIssueBookBtn = new MetroFramework.Controls.MetroButton();
+            this.mReturnBookBtn = new MetroFramework.Controls.MetroButton();
+            this.mActiveInactiveUserBtn = new MetroFramework.Controls.MetroButton();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.mUserID = new System.Windows.Forms.Label();
+            this.mMyInformationBtn = new MetroFramework.Controls.MetroButton();
+            this.pictureBoxAdmin = new System.Windows.Forms.PictureBox();
+            this.mChangePasswordBtn = new MetroFramework.Controls.MetroButton();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.mManageStudetnBtn = new MetroFramework.Controls.MetroButton();
+            this.panel22 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uploadBookPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdmin)).BeginInit();
+            this.panel22.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -89,142 +89,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 555);
             this.panel1.TabIndex = 3;
-            // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel22.Controls.Add(this.mManageStudetnBtn);
-            this.panel22.Controls.Add(this.metroButton2);
-            this.panel22.Controls.Add(this.mChangePasswordBtn);
-            this.panel22.Controls.Add(this.pictureBoxAdmin);
-            this.panel22.Controls.Add(this.mMyInformationBtn);
-            this.panel22.Controls.Add(this.mUserID);
-            this.panel22.Controls.Add(this.metroButton3);
-            this.panel22.Controls.Add(this.metroLabel8);
-            this.panel22.Controls.Add(this.mActiveInactiveUserBtn);
-            this.panel22.Controls.Add(this.mReturnBookBtn);
-            this.panel22.Controls.Add(this.mIssueBookBtn);
-            this.panel22.Controls.Add(this.metroButton4);
-            this.panel22.Location = new System.Drawing.Point(3, 11);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(200, 541);
-            this.panel22.TabIndex = 56;
-            this.panel22.Visible = false;
-            // 
-            // mManageStudetnBtn
-            // 
-            this.mManageStudetnBtn.Location = new System.Drawing.Point(0, 243);
-            this.mManageStudetnBtn.Name = "mManageStudetnBtn";
-            this.mManageStudetnBtn.Size = new System.Drawing.Size(200, 37);
-            this.mManageStudetnBtn.TabIndex = 56;
-            this.mManageStudetnBtn.Text = "Manage Student";
-            this.mManageStudetnBtn.UseSelectable = true;
-            // 
-            // metroButton2
-            // 
-            this.metroButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.metroButton2.Location = new System.Drawing.Point(0, 501);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(200, 37);
-            this.metroButton2.TabIndex = 10;
-            this.metroButton2.Text = "Logout";
-            this.metroButton2.UseSelectable = true;
-            // 
-            // mChangePasswordBtn
-            // 
-            this.mChangePasswordBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.mChangePasswordBtn.Location = new System.Drawing.Point(0, 415);
-            this.mChangePasswordBtn.Name = "mChangePasswordBtn";
-            this.mChangePasswordBtn.Size = new System.Drawing.Size(200, 37);
-            this.mChangePasswordBtn.TabIndex = 9;
-            this.mChangePasswordBtn.Text = "Change Password";
-            this.mChangePasswordBtn.UseSelectable = true;
-            // 
-            // pictureBoxAdmin
-            // 
-            this.pictureBoxAdmin.Location = new System.Drawing.Point(0, 30);
-            this.pictureBoxAdmin.Name = "pictureBoxAdmin";
-            this.pictureBoxAdmin.Size = new System.Drawing.Size(200, 97);
-            this.pictureBoxAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxAdmin.TabIndex = 8;
-            this.pictureBoxAdmin.TabStop = false;
-            // 
-            // mMyInformationBtn
-            // 
-            this.mMyInformationBtn.Location = new System.Drawing.Point(0, 372);
-            this.mMyInformationBtn.Name = "mMyInformationBtn";
-            this.mMyInformationBtn.Size = new System.Drawing.Size(200, 37);
-            this.mMyInformationBtn.TabIndex = 7;
-            this.mMyInformationBtn.Text = "My Information";
-            this.mMyInformationBtn.UseSelectable = true;
-            // 
-            // mUserID
-            // 
-            this.mUserID.AutoSize = true;
-            this.mUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mUserID.Location = new System.Drawing.Point(3, 130);
-            this.mUserID.Name = "mUserID";
-            this.mUserID.Size = new System.Drawing.Size(43, 20);
-            this.mUserID.TabIndex = 6;
-            this.mUserID.Text = "User";
-            // 
-            // metroButton3
-            // 
-            this.metroButton3.Location = new System.Drawing.Point(0, 200);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(200, 37);
-            this.metroButton3.TabIndex = 4;
-            this.metroButton3.Text = "Manage Book";
-            this.metroButton3.UseSelectable = true;
-            // 
-            // metroLabel8
-            // 
-            this.metroLabel8.AutoSize = true;
-            this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel8.Location = new System.Drawing.Point(58, 8);
-            this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(77, 19);
-            this.metroLabel8.TabIndex = 5;
-            this.metroLabel8.Text = "WELCOME";
-            this.metroLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroLabel8.UseCustomBackColor = true;
-            // 
-            // mActiveInactiveUserBtn
-            // 
-            this.mActiveInactiveUserBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.mActiveInactiveUserBtn.Location = new System.Drawing.Point(0, 458);
-            this.mActiveInactiveUserBtn.Name = "mActiveInactiveUserBtn";
-            this.mActiveInactiveUserBtn.Size = new System.Drawing.Size(200, 37);
-            this.mActiveInactiveUserBtn.TabIndex = 3;
-            this.mActiveInactiveUserBtn.Text = "Active/Inactive Student";
-            this.mActiveInactiveUserBtn.UseSelectable = true;
-            // 
-            // mReturnBookBtn
-            // 
-            this.mReturnBookBtn.Location = new System.Drawing.Point(0, 329);
-            this.mReturnBookBtn.Name = "mReturnBookBtn";
-            this.mReturnBookBtn.Size = new System.Drawing.Size(200, 37);
-            this.mReturnBookBtn.TabIndex = 2;
-            this.mReturnBookBtn.Text = "Return Book";
-            this.mReturnBookBtn.UseSelectable = true;
-            // 
-            // mIssueBookBtn
-            // 
-            this.mIssueBookBtn.Location = new System.Drawing.Point(0, 286);
-            this.mIssueBookBtn.Name = "mIssueBookBtn";
-            this.mIssueBookBtn.Size = new System.Drawing.Size(200, 37);
-            this.mIssueBookBtn.TabIndex = 1;
-            this.mIssueBookBtn.Text = "Issue Book";
-            this.mIssueBookBtn.UseSelectable = true;
-            // 
-            // metroButton4
-            // 
-            this.metroButton4.Location = new System.Drawing.Point(0, 157);
-            this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(200, 37);
-            this.metroButton4.TabIndex = 0;
-            this.metroButton4.Text = "Dashboard";
-            this.metroButton4.UseSelectable = true;
             // 
             // labelUserID
             // 
@@ -591,6 +455,142 @@
             this.mLibrarianBookAddBtn.UseSelectable = true;
             this.mLibrarianBookAddBtn.Visible = false;
             // 
+            // metroButton4
+            // 
+            this.metroButton4.Location = new System.Drawing.Point(0, 157);
+            this.metroButton4.Name = "metroButton4";
+            this.metroButton4.Size = new System.Drawing.Size(200, 37);
+            this.metroButton4.TabIndex = 0;
+            this.metroButton4.Text = "Dashboard";
+            this.metroButton4.UseSelectable = true;
+            // 
+            // mIssueBookBtn
+            // 
+            this.mIssueBookBtn.Location = new System.Drawing.Point(0, 286);
+            this.mIssueBookBtn.Name = "mIssueBookBtn";
+            this.mIssueBookBtn.Size = new System.Drawing.Size(200, 37);
+            this.mIssueBookBtn.TabIndex = 1;
+            this.mIssueBookBtn.Text = "Issue Book";
+            this.mIssueBookBtn.UseSelectable = true;
+            // 
+            // mReturnBookBtn
+            // 
+            this.mReturnBookBtn.Location = new System.Drawing.Point(0, 329);
+            this.mReturnBookBtn.Name = "mReturnBookBtn";
+            this.mReturnBookBtn.Size = new System.Drawing.Size(200, 37);
+            this.mReturnBookBtn.TabIndex = 2;
+            this.mReturnBookBtn.Text = "Return Book";
+            this.mReturnBookBtn.UseSelectable = true;
+            // 
+            // mActiveInactiveUserBtn
+            // 
+            this.mActiveInactiveUserBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.mActiveInactiveUserBtn.Location = new System.Drawing.Point(0, 458);
+            this.mActiveInactiveUserBtn.Name = "mActiveInactiveUserBtn";
+            this.mActiveInactiveUserBtn.Size = new System.Drawing.Size(200, 37);
+            this.mActiveInactiveUserBtn.TabIndex = 3;
+            this.mActiveInactiveUserBtn.Text = "Active/Inactive Student";
+            this.mActiveInactiveUserBtn.UseSelectable = true;
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel8.Location = new System.Drawing.Point(58, 8);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(77, 19);
+            this.metroLabel8.TabIndex = 5;
+            this.metroLabel8.Text = "WELCOME";
+            this.metroLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel8.UseCustomBackColor = true;
+            // 
+            // metroButton3
+            // 
+            this.metroButton3.Location = new System.Drawing.Point(0, 200);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(200, 37);
+            this.metroButton3.TabIndex = 4;
+            this.metroButton3.Text = "Manage Book";
+            this.metroButton3.UseSelectable = true;
+            // 
+            // mUserID
+            // 
+            this.mUserID.AutoSize = true;
+            this.mUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mUserID.Location = new System.Drawing.Point(3, 130);
+            this.mUserID.Name = "mUserID";
+            this.mUserID.Size = new System.Drawing.Size(43, 20);
+            this.mUserID.TabIndex = 6;
+            this.mUserID.Text = "User";
+            // 
+            // mMyInformationBtn
+            // 
+            this.mMyInformationBtn.Location = new System.Drawing.Point(0, 372);
+            this.mMyInformationBtn.Name = "mMyInformationBtn";
+            this.mMyInformationBtn.Size = new System.Drawing.Size(200, 37);
+            this.mMyInformationBtn.TabIndex = 7;
+            this.mMyInformationBtn.Text = "My Information";
+            this.mMyInformationBtn.UseSelectable = true;
+            // 
+            // pictureBoxAdmin
+            // 
+            this.pictureBoxAdmin.Location = new System.Drawing.Point(0, 30);
+            this.pictureBoxAdmin.Name = "pictureBoxAdmin";
+            this.pictureBoxAdmin.Size = new System.Drawing.Size(200, 97);
+            this.pictureBoxAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAdmin.TabIndex = 8;
+            this.pictureBoxAdmin.TabStop = false;
+            // 
+            // mChangePasswordBtn
+            // 
+            this.mChangePasswordBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.mChangePasswordBtn.Location = new System.Drawing.Point(0, 415);
+            this.mChangePasswordBtn.Name = "mChangePasswordBtn";
+            this.mChangePasswordBtn.Size = new System.Drawing.Size(200, 37);
+            this.mChangePasswordBtn.TabIndex = 9;
+            this.mChangePasswordBtn.Text = "Change Password";
+            this.mChangePasswordBtn.UseSelectable = true;
+            // 
+            // metroButton2
+            // 
+            this.metroButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.metroButton2.Location = new System.Drawing.Point(0, 501);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(200, 37);
+            this.metroButton2.TabIndex = 10;
+            this.metroButton2.Text = "Logout";
+            this.metroButton2.UseSelectable = true;
+            // 
+            // mManageStudetnBtn
+            // 
+            this.mManageStudetnBtn.Location = new System.Drawing.Point(0, 243);
+            this.mManageStudetnBtn.Name = "mManageStudetnBtn";
+            this.mManageStudetnBtn.Size = new System.Drawing.Size(200, 37);
+            this.mManageStudetnBtn.TabIndex = 56;
+            this.mManageStudetnBtn.Text = "Manage Student";
+            this.mManageStudetnBtn.UseSelectable = true;
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel22.Controls.Add(this.mManageStudetnBtn);
+            this.panel22.Controls.Add(this.metroButton2);
+            this.panel22.Controls.Add(this.mChangePasswordBtn);
+            this.panel22.Controls.Add(this.pictureBoxAdmin);
+            this.panel22.Controls.Add(this.mMyInformationBtn);
+            this.panel22.Controls.Add(this.mUserID);
+            this.panel22.Controls.Add(this.metroButton3);
+            this.panel22.Controls.Add(this.metroLabel8);
+            this.panel22.Controls.Add(this.mActiveInactiveUserBtn);
+            this.panel22.Controls.Add(this.mReturnBookBtn);
+            this.panel22.Controls.Add(this.mIssueBookBtn);
+            this.panel22.Controls.Add(this.metroButton4);
+            this.panel22.Location = new System.Drawing.Point(20, 14);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(200, 541);
+            this.panel22.TabIndex = 56;
+            this.panel22.Visible = false;
+            // 
             // ManageBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -620,10 +620,10 @@
             this.Text = "Manage Book";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uploadBookPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdmin)).EndInit();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdmin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uploadBookPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -655,6 +655,8 @@
         private MetroFramework.Controls.MetroTextBox bookidTF;
         private MetroFramework.Controls.MetroButton mImageBrowseBtn;
         private MetroFramework.Controls.MetroComboBox yearComboBox;
+        public MetroFramework.Controls.MetroButton mLibrarianViewBookAddBtn;
+        public MetroFramework.Controls.MetroButton mLibrarianBookAddBtn;
         public System.Windows.Forms.Panel panel22;
         private MetroFramework.Controls.MetroButton mManageStudetnBtn;
         private MetroFramework.Controls.MetroButton metroButton2;
@@ -668,7 +670,5 @@
         private MetroFramework.Controls.MetroButton mReturnBookBtn;
         private MetroFramework.Controls.MetroButton mIssueBookBtn;
         private MetroFramework.Controls.MetroButton metroButton4;
-        public MetroFramework.Controls.MetroButton mLibrarianViewBookAddBtn;
-        public MetroFramework.Controls.MetroButton mLibrarianBookAddBtn;
     }
 }

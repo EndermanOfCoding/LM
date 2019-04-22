@@ -299,30 +299,60 @@ namespace BAL
             cmd.CommandText = "Delete from feesTable where studentId = '" + info.userId + "'";
             return db.ExeNonQuery(cmd);
         }
+        
+        //public DataTable updateActive(Information info)
+        //{
+        //    SqlCommand cmd = new SqlCommand();
+        //    cmd.CommandType = CommandType.Text;
+        //    cmd.CommandText = "select * from login where userId = '" + info.userId + "'";
+        //    return db.ExeReader(cmd);
+        //}
 
+        //public int deactivateUser(Information info)
+        //{
+        //    SqlCommand cmd = new SqlCommand();
+        //    cmd.CommandType = CommandType.Text;
+        //    cmd.CommandText = "Update login set status = @a1 where userId = '" + info.userId + "'";
+        //    cmd.Parameters.Add(new SqlParameter("@a1", 3));
+        //    return db.ExeNonQuery(cmd);
+        //}
 
-
-        public DataTable updateActive(Information info)
-        {
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from login where userId = '" + info.userId + "'";
-            return db.ExeReader(cmd);
-        }
-
-        public int deactivateUser(Information info)
-        {
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Update login set status = @a1 where userId = '" + info.userId + "'";
-            cmd.Parameters.Add(new SqlParameter("@a1", 3));
-            return db.ExeNonQuery(cmd);
-        }
+        //show number of book
         public int BookCount()
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "SELECT sum (quantity) FROM books";
+            //cmd.Parameters.Add(new SqlParameter("@a1", 3));
+            //int count = Convert.ToInt32(db.ExeScalar(cmd));
+            return Convert.ToInt32(db.ExeScalar(cmd));
+        }
+        //show number of librarian
+        public int LibrarianCount()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT COUNT (*) FROM librarian";
+            //cmd.Parameters.Add(new SqlParameter("@a1", 3));
+            //int count = Convert.ToInt32(db.ExeScalar(cmd));
+            return Convert.ToInt32(db.ExeScalar(cmd));
+        }
+        //show number of student
+        public int StudentCount()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT COUNT (*) FROM Student";
+            //cmd.Parameters.Add(new SqlParameter("@a1", 3));
+            //int count = Convert.ToInt32(db.ExeScalar(cmd));
+            return Convert.ToInt32(db.ExeScalar(cmd));
+        }
+        //show number of book issued
+        public int IssueCount()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT COUNT (*) FROM borrowInfo";
             //cmd.Parameters.Add(new SqlParameter("@a1", 3));
             //int count = Convert.ToInt32(db.ExeScalar(cmd));
             return Convert.ToInt32(db.ExeScalar(cmd));

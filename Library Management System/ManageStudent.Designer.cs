@@ -451,9 +451,9 @@
             this.panel1.Controls.Add(this.mManageBookBtn);
             this.panel1.Controls.Add(this.mLibarianBtn);
             this.panel1.Controls.Add(this.mDashboardBtn);
-            this.panel1.Location = new System.Drawing.Point(3, 8);
+            this.panel1.Location = new System.Drawing.Point(0, 67);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 518);
+            this.panel1.Size = new System.Drawing.Size(200, 536);
             this.panel1.TabIndex = 52;
             // 
             // labelUserID
@@ -468,7 +468,7 @@
             // 
             // mManageStudentBtn
             // 
-            this.mManageStudentBtn.Location = new System.Drawing.Point(0, 187);
+            this.mManageStudentBtn.Location = new System.Drawing.Point(0, 197);
             this.mManageStudentBtn.Name = "mManageStudentBtn";
             this.mManageStudentBtn.Size = new System.Drawing.Size(200, 52);
             this.mManageStudentBtn.TabIndex = 4;
@@ -490,7 +490,7 @@
             // mLogoutBtn
             // 
             this.mLogoutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.mLogoutBtn.Location = new System.Drawing.Point(0, 418);
+            this.mLogoutBtn.Location = new System.Drawing.Point(0, 458);
             this.mLogoutBtn.Name = "mLogoutBtn";
             this.mLogoutBtn.Size = new System.Drawing.Size(200, 52);
             this.mLogoutBtn.TabIndex = 3;
@@ -500,7 +500,7 @@
             // 
             // mManageBookBtn
             // 
-            this.mManageBookBtn.Location = new System.Drawing.Point(0, 341);
+            this.mManageBookBtn.Location = new System.Drawing.Point(0, 371);
             this.mManageBookBtn.Name = "mManageBookBtn";
             this.mManageBookBtn.Size = new System.Drawing.Size(200, 52);
             this.mManageBookBtn.TabIndex = 2;
@@ -510,7 +510,7 @@
             // 
             // mLibarianBtn
             // 
-            this.mLibarianBtn.Location = new System.Drawing.Point(0, 264);
+            this.mLibarianBtn.Location = new System.Drawing.Point(0, 284);
             this.mLibarianBtn.Name = "mLibarianBtn";
             this.mLibarianBtn.Size = new System.Drawing.Size(200, 52);
             this.mLibarianBtn.TabIndex = 1;
@@ -566,13 +566,12 @@
             this.panel2.Controls.Add(this.mChangePasswordBtn);
             this.panel2.Controls.Add(this.pictureBoxAdmin);
             this.panel2.Controls.Add(this.mUserID);
-            this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.metroLabel11);
             this.panel2.Controls.Add(this.mPayFineBtn);
             this.panel2.Controls.Add(this.mReturnBookBtn);
             this.panel2.Controls.Add(this.mIssueBookBtn);
             this.panel2.Controls.Add(this.metroButton4);
-            this.panel2.Location = new System.Drawing.Point(4, 60);
+            this.panel2.Location = new System.Drawing.Point(3, 59);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 541);
             this.panel2.TabIndex = 57;
@@ -707,6 +706,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 602);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.mLibViewBtn);
             this.Controls.Add(this.mLibAddBtn);
             this.Controls.Add(this.passwordAutoGen);

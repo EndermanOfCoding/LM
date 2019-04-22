@@ -56,9 +56,7 @@ namespace Library_Management_System
 
         private void ShowCountLibrarian()
         {
-            dbconnection.getcon();
-            SqlCommand cmd = new SqlCommand("SELECT COUNT (*) FROM librarian", dbconnection.getcon());
-            Int32 count = Convert.ToInt32(cmd.ExecuteScalar());
+            Int32 count = operations.LibrarianCount();
             if (count > 0)
             {
                 labelTotalLibarian.Text = Convert.ToString(count.ToString());
@@ -68,13 +66,11 @@ namespace Library_Management_System
                 labelTotalLibarian.Text = "0";
 
             }
-            dbconnection.getcon().Close();
         }
         private void ShowCountStudent()
         {
-            dbconnection.getcon();
-            SqlCommand cmd = new SqlCommand("SELECT COUNT (*) FROM Student", dbconnection.getcon());
-            Int32 count = Convert.ToInt32(cmd.ExecuteScalar());
+            Int32 count = operations.StudentCount();
+
             if (count > 0)
             {
                 labelTotalStudent.Text = Convert.ToString(count.ToString());
@@ -90,9 +86,8 @@ namespace Library_Management_System
 
         private void ShowCountIssue()
         {
-            dbconnection.getcon();
-            SqlCommand cmd = new SqlCommand("SELECT COUNT (*) FROM borrowInfo", dbconnection.getcon());
-            Int32 count = Convert.ToInt32(cmd.ExecuteScalar());
+            
+            Int32 count = operations.IssueCount();
             if (count > 0)
             {
                 labelBookIssued.Text = Convert.ToString(count.ToString());
@@ -100,11 +95,8 @@ namespace Library_Management_System
             else
             {
                 labelBookIssued.Text = "0";
-
             }
-            dbconnection.getcon().Close();
-
-
+           
         }
 
         #region menu panel
