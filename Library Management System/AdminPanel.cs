@@ -26,39 +26,35 @@ namespace Library_Management_System
         public AdminPanel(string userId)
         {
             InitializeComponent();
-
-            showCount_Books();
-            showCount_Librarian();
-            showCount_Student();
-            showCount_Issue();
             this.userId = userId;
             labelUserID.Text = userId;
+            ShowCountBooks();
+            ShowCountLibrarian();
+            ShowCountStudent();
+            ShowCountIssue();
+            
         }
 
         //counting books and showing in dashboard
 
         #region show number of book in dashboard
-        public void showCount_Books()
+        private void ShowCountBooks()
         {
+            Int32 count = operations.BookCount();
 
-
-            dbconnection.getcon();
-            SqlCommand cmd = new SqlCommand("SELECT sum (quantity) FROM books", dbconnection.getcon());
-
-            Int32 count = Convert.ToInt32(cmd.ExecuteScalar());
             if (count > 0)
             {
                 labelTotalBook.Text = Convert.ToString(count.ToString());
             }
             else
             {
-                labelTotalBook.Text = "10";
+                labelTotalBook.Text = "0";
             }
-            dbconnection.getcon().Close();
+            
         }
         #endregion
 
-        public void showCount_Librarian()
+        private void ShowCountLibrarian()
         {
             dbconnection.getcon();
             SqlCommand cmd = new SqlCommand("SELECT COUNT (*) FROM librarian", dbconnection.getcon());
@@ -74,7 +70,7 @@ namespace Library_Management_System
             }
             dbconnection.getcon().Close();
         }
-        public void showCount_Student()
+        private void ShowCountStudent()
         {
             dbconnection.getcon();
             SqlCommand cmd = new SqlCommand("SELECT COUNT (*) FROM Student", dbconnection.getcon());
@@ -92,7 +88,7 @@ namespace Library_Management_System
 
         }
 
-        public void showCount_Issue()
+        private void ShowCountIssue()
         {
             dbconnection.getcon();
             SqlCommand cmd = new SqlCommand("SELECT COUNT (*) FROM borrowInfo", dbconnection.getcon());
@@ -112,10 +108,7 @@ namespace Library_Management_System
         }
 
         #region menu panel
-
-       
-
-
+        
         private void mManageStudentBtn_Click(object sender, EventArgs e)
         {
             ManageStudent manageStudent = new ManageStudent(userId);
@@ -137,7 +130,6 @@ namespace Library_Management_System
             manageBook.Show();
 
         }
-        
 
         private void mLogoutBtn_Click(object sender, EventArgs e)
         {

@@ -318,6 +318,14 @@ namespace BAL
             cmd.Parameters.Add(new SqlParameter("@a1", 3));
             return db.ExeNonQuery(cmd);
         }
-        
+        public int BookCount()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT sum (quantity) FROM books";
+            //cmd.Parameters.Add(new SqlParameter("@a1", 3));
+            //int count = Convert.ToInt32(db.ExeScalar(cmd));
+            return Convert.ToInt32(db.ExeScalar(cmd));
+        }
     }
 }

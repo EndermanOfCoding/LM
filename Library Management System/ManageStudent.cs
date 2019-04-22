@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using DAL;
 using BEL;
 using BAL;
-
+using System.Data.SqlClient;
 
 namespace Library_Management_System
 {
@@ -34,7 +34,21 @@ namespace Library_Management_System
 
         private void SetName()
         {
-            throw new NotImplementedException();
+            con.getcon();
+            string query1 = "select * from librarian where librarianId = '" + userId + "'";
+            SqlCommand cmdd = new SqlCommand(query1, con.getcon());
+            SqlDataReader sd = cmdd.ExecuteReader();
+            if (sd.Read())
+            {
+                mUserID.Text = (sd["librarianName"].ToString());
+                byte[] pic = (byte[])sd["librarianImage"];
+                MemoryStream ms = new MemoryStream(pic);
+                ms.Seek(0, SeekOrigin.Begin);
+
+                pictureBoxAdmin.Image = Image.FromStream(ms);
+
+            }
+            con.getcon().Close();
         }
 
         #region menu panel
